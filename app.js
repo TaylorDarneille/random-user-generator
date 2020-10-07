@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         })
         .then((jsonData)=>{
             let people = jsonData.results;
+            while(peopleList.firstChild) {
+                peopleList.removeChild(peopleList.firstChild)
+            }
             people.forEach(addPerson);
         })
         .catch((error)=>{
@@ -26,5 +29,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
         li.textContent = person.name.first, person.name.last;
         peopleList.appendChild(li);
     }
-    
+
 });
