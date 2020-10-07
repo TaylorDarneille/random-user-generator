@@ -1,0 +1,1 @@
+Demo use of fetch for AJAX by getting a certain number of fictional users from the [Random User Generator](https://randomuser.me/) API based on user input of a number, then displaying those users to the page.
